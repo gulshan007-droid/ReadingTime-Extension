@@ -1,0 +1,20 @@
+{
+    "name":"Testing",
+    "manifest_version":2,
+    "version":"0.1",
+    "description":"it gives the information about time taken to read a Article",
+    "browser_action":{
+        "default_icon":"./picker_32.png"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["contentScript.js"]
+
+        }
+    ],
+    "background":{
+        "scripts":["backgroundPage.js"]
+    }
+    
+}
